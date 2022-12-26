@@ -24,8 +24,8 @@ function showPopularMovie(HightRatedMovie){
 
     //HightRatedMovie is promise that why we use .then
     HightRatedMovie.then(
-       (movie) => {
-        movie.forEach((movie) => {
+       (movies) => {
+        movies.forEach((movie) => {
             const movieDiv = document.createElement('div')
             setAttributes(movieDiv, {"class": "card col-md-2 border border-dark slider pt-3 pb-3 hover-box"});
             
@@ -60,8 +60,8 @@ function showHightRatedMovie(HightRatedMovie){
 
     //HightRatedMovie is promise that why we use .then
     HightRatedMovie.then(
-       (movie) => {
-        movie.forEach((movie) => {
+       (movies) => {
+        movies.forEach((movie) => {
             const movieDiv = document.createElement('div')
             setAttributes(movieDiv, {"class": "card col-md-2 border border-dark slider pt-3 pb-3 hover-box"});
             
