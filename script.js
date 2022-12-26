@@ -31,7 +31,7 @@ function showPopularMovie(HightRatedMovie){
             
             movieDiv.innerHTML=`
             <div class="movie">
-                <img src="${base_img+movie['poster_path']}" alt="${movie['original_title']}" width="175px" height="230px">
+                <img src="${base_img+movie['poster_path']}" alt="${movie['original_title']}" width="175px" height="230px" class="img-fluid">
                 <p>${movie['original_title']}</p>
             </div>
             `
@@ -67,7 +67,7 @@ function showHightRatedMovie(HightRatedMovie){
             
             movieDiv.innerHTML=`
             <div class="movie">
-                <img src="${base_img+movie['poster_path']}" alt="${movie['original_title']}" width="175px" height="230px">
+                <img src="${base_img+movie['poster_path']}" alt="${movie['original_title']}" width="175px" height="230px" class="img-fluid">
                 <p>${movie['original_title']}</p>
             </div>
             `
