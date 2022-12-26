@@ -76,4 +76,7 @@ function showHightRatedMovie(HightRatedMovie){
         })
        } 
     )
+    .catch((error) =>{
+        console.log(error)
+    })
 }
