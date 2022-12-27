@@ -1,10 +1,10 @@
-const base_url = 'https://api.themoviedb.org/3'
-const end_point='/discover/movie?sort_by=popularity.desc'
-const api_key='&api_key=89bd96090b6c1c5f41e3ba71b98b9548'
+export const base_url = 'https://api.themoviedb.org/3'
+export const end_point='/discover/movie?sort_by=popularity.desc'
+export const api_key='&api_key=89bd96090b6c1c5f41e3ba71b98b9548'
 
 const api_url=base_url+end_point+api_key
 
-const Movies = async (url) => {
+export const Movies = async (url) => {
  const movie = await fetch(url)
  const movie_data = await movie.json()
  const data = await movie_data["results"]
@@ -15,7 +15,7 @@ const Movies = async (url) => {
 const data = Movies(api_url)
 showPopularMovie(data)
 
-const base_img='https://image.tmdb.org/t/p/w500'
+export const base_img='https://image.tmdb.org/t/p/w500'
 
 const main = document.getElementById('main')
 
@@ -27,7 +27,7 @@ function showPopularMovie(HightRatedMovie){
        (movies) => {
         movies.forEach((movie) => {
             const movieDiv = document.createElement('div')
-            setAttributes(movieDiv, {"class": "card col-md-2 border border-dark slider pt-3 pb-3 hover-box"});
+            setAttributes(movieDiv, {"class": "card col-md-2 border border-dark slider bg-dark text-white pt-3 pb-3 hover-box"});
             
             movieDiv.innerHTML=`
             <div class="movie">
@@ -42,7 +42,7 @@ function showPopularMovie(HightRatedMovie){
     )
 }
 
-function setAttributes(card, attrs) {
+export function setAttributes(card, attrs) {
     for(var key in attrs) {
       card.setAttribute(key, attrs[key]);
     }
@@ -63,7 +63,7 @@ function showHightRatedMovie(HightRatedMovie){
        (movies) => {
         movies.forEach((movie) => {
             const movieDiv = document.createElement('div')
-            setAttributes(movieDiv, {"class": "card col-md-2 border border-dark slider pt-3 pb-3 hover-box"});
+            setAttributes(movieDiv, {"class": "card col-md-2 border border-dark slider bg-dark text-white pt-3 pb-3 hover-box"});
             
             movieDiv.innerHTML=`
             <div class="movie">
@@ -80,3 +80,8 @@ function showHightRatedMovie(HightRatedMovie){
         console.log(error)
     })
 }
+
+
+//latest_movies page
+
+
