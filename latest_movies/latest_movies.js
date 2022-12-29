@@ -1,4 +1,4 @@
-import {Movies, setAttributes,base_url,end_point,api_key,base_img} from './script.js'
+import {Movies, setAttributes,base_url,end_point,api_key,base_img} from '../script.js'
 
 
 const mainTwo = document.getElementById('demo')
