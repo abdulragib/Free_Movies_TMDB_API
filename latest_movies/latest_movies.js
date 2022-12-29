@@ -14,7 +14,7 @@ function showPopularGridMovie(HightRatedMovie){
        (movies) => {
         movies.forEach((movie) => {
             const movieDiv = document.createElement('div')
-            setAttributes(movieDiv, {"class": "card d-flex justify-content-center align-items-center col-md-2 mx-1 border border-dark slider bg-dark text-white pt-3 pb-3 mb-2 hover-box"});
+            setAttributes(movieDiv, {"class": "card d-flex justify-content-center align-items-center col-md-2 mx-1 border border-dark slider bg-dark text-white pt-3 pb-1 mb-2 hover-box"});
             
             movieDiv.innerHTML=`
             <div class="movie">

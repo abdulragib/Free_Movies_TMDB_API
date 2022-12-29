@@ -2,6 +2,10 @@ body{
   background-color: black;
 }
 
+.movie{
+  height:320px;
+}
+
 .sticky{
     top: 0;
     position: fixed;

@@ -82,6 +82,3 @@ function showHightRatedMovie(HightRatedMovie){
 }
 
 
-//latest_movies page
-
-
